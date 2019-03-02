@@ -27,7 +27,9 @@ class _HomeState extends State<Home> {
           )
         ],
       ),
-      body: Column(
+      body: SingleChildScrollView(
+        padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+          child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Icon(
@@ -60,12 +62,13 @@ class _HomeState extends State<Home> {
                     "Calcular",
                     style: TextStyle(color: Colors.white, fontSize: 25),
                   )))),
-          Text("Info",
-          textAlign: TextAlign.center,
-          style: TextStyle(color: Colors.green, fontSize: 25),
+          Text(
+            "Info",
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.green, fontSize: 25),
           )
         ],
-      ),
+      )),
     );
   }
 }
